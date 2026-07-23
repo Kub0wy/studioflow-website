@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudioFlow creates focused professional tools for post-production workflows.">
+  <meta name="theme-color" content="#ffffff">
+  <title>StudioFlow — Professional Tools for Post Production</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+     <a href="#top" class="brand-logo-link" aria-label="StudioFlow — home">
+          <img
+            class="brand-logo-svg brand-logo-svg-small"
+            src="assets/logo/studioflow-logo.svg"
+            alt="StudioFlow"
+          >
+        </a>
+      <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="main-navigation" id="main-navigation" aria-label="Main navigation">
+        <a href="#plugins">Plugins</a>
+        <a href="#applications">Applications</a>
+        <a href="#about">About</a>
+        <a class="header-cta" href="#plugins">Explore tools</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-background" aria-hidden="true">
+        <img class="hero-waves" src="assets/background/studioflow-waves-static.svg" alt="">
+      </div>
+      <div class="container hero-content">
+        <p class="hero-eyebrow">Professional tools for post production</p>
+        <h1 class="hero-logo-heading">
+          <img
+            class="brand-logo-svg brand-logo-svg-hero"
+            src="assets/logo/studioflow-logo.svg"
+            alt="StudioFlow"
+          >
+        </h1>
+        <p class="hero-description">Professional Premiere Pro plugins and desktop applications for project management and reliable data transfer.</p>
+        <a class="hero-scroll-link" href="#plugins"><span>Explore our tools</span><span class="hero-scroll-arrow" aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="section plugins-section" id="plugins">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-label">Premiere Pro Plugins</p>
+            <h2>Powerful plugins.<br>Streamlined workflows.</h2>
+          </div>
+          <p>Focused tools designed to remove repetitive operations and save valuable editing time.</p>
+        </div>
+
+        <div class="plugin-grid">
+          <article class="product-card product-card-enable reveal">
+            <div class="product-accent-panel">
+              <div class="product-code">EN</div><p>StudioFlow</p><h3>Enable</h3><span>Fast clip state management</span>
+            </div>
+            <div class="product-media"><img src="assets/images/enable-screen.svg" alt="StudioFlow Enable plugin interface"></div>
+          </article>
+          <article class="product-card product-card-delivery reveal">
+            <div class="product-accent-panel">
+              <div class="product-code">DE</div><p>StudioFlow</p><h3>Delivery</h3><span>Reliable handoff preparation</span>
+            </div>
+            <div class="product-media"><img src="assets/images/delivery-screen.svg" alt="StudioFlow Delivery plugin interface"></div>
+          </article>
+          <article class="product-card product-card-framegap reveal">
+            <div class="product-accent-panel">
+              <div class="product-code">FG</div><p>StudioFlow</p><h3>FrameGap</h3><span>Find tiny timeline gaps</span>
+            </div>
+            <div class="product-media"><img src="assets/images/framegap-screen.svg" alt="StudioFlow FrameGap plugin interface"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section applications-section" id="applications">
+      <div class="container applications-layout">
+        <div class="applications-copy reveal">
+          <p class="section-label">In development</p>
+          <h2>Desktop Applications</h2>
+          <p>Native tools for managing production workflows, checking media and copying valuable project data.</p>
+        </div>
+        <div class="application-list reveal">
+          <article class="application-item"><div class="application-icon manager">MA</div><div><h3>Manager</h3><p>Post-production project management</p></div><span class="application-arrow">→</span></article>
+          <article class="application-item"><div class="application-icon qc">QC</div><div><h3>QC</h3><p>Professional media quality control</p></div><span class="application-arrow">→</span></article>
+          <article class="application-item"><div class="application-icon datamaster">DM</div><div><h3>DataMaster</h3><p>Reliable data copying and verification</p></div><span class="application-arrow">→</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-layout reveal">
+        <a class="brand-logo-link brand-logo-footer-link" href="#top" aria-label="StudioFlow — back to top">
+          <img
+            class="brand-logo-svg brand-logo-svg-footer"
+            src="assets/logo/studioflow-logo.svg"
+            alt="StudioFlow"
+          >
+        </a>
+        <h2>Designed by editors.<br>Built for professionals.</h2>
+        <p>StudioFlow creates focused tools from real professional post-production workflow needs.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><p>© <span id="current-year"></span> StudioFlow</p><div class="footer-links"><a href="#plugins">Plugins</a><a href="#applications">Applications</a><a href="#about">About</a></div></div></footer>
+</body>
+</html>

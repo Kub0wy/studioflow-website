@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 650">
+  <defs><linearGradient id="b" x2="0" y2="1"><stop stop-color="#191d23"/><stop offset="1" stop-color="#0d1014"/></linearGradient></defs>
+  <rect width="720" height="650" rx="28" fill="#0b0e12"/>
+  <rect x="24" y="24" width="672" height="602" rx="20" fill="url(#b)" stroke="#303741"/>
+  <text x="56" y="70" fill="#f4f7fb" font-family="Arial" font-size="24" font-weight="700">StudioFlow Enable</text>
+  <circle cx="650" cy="62" r="7" fill="#5f6875"/>
+  <rect x="56" y="105" width="390" height="64" rx="10" fill="#1769d5"/>
+  <text x="251" y="145" text-anchor="middle" fill="white" font-family="Arial" font-size="20" font-weight="700">Enable</text>
+  <rect x="466" y="105" width="190" height="64" rx="10" fill="#20262d"/>
+  <text x="561" y="145" text-anchor="middle" fill="#cfd5dd" font-family="Arial" font-size="17">All clips</text>
+  <text x="56" y="220" fill="#9da6b2" font-family="Arial" font-size="17">TARGETS</text>
+  <g font-family="Arial" font-size="18" fill="#e8edf3">
+    <rect x="56" y="244" width="600" height="62" rx="10" fill="#171c22"/><text x="90" y="282">01_Edit_Timeline</text><rect x="604" y="264" width="22" height="22" rx="5" fill="#1e7de3"/>
+    <rect x="56" y="318" width="600" height="62" rx="10" fill="#171c22"/><text x="90" y="356">02_Edit_Timeline</text><rect x="604" y="338" width="22" height="22" rx="5" fill="#1e7de3"/>
+    <rect x="56" y="392" width="600" height="62" rx="10" fill="#171c22"/><text x="90" y="430">03_Graphics</text><rect x="604" y="412" width="22" height="22" rx="5" fill="#1e7de3"/>
+  </g>
+  <rect x="56" y="504" width="600" height="70" rx="12" fill="#222831"/>
+  <text x="356" y="548" text-anchor="middle" fill="#e6ebf1" font-family="Arial" font-size="19">Undo last action</text>
+</svg>

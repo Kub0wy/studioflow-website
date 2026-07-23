@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 650">
+  <defs><linearGradient id="b" x2="0" y2="1"><stop stop-color="#191d23"/><stop offset="1" stop-color="#0d1014"/></linearGradient></defs>
+  <rect width="720" height="650" rx="28" fill="#0b0e12"/>
+  <rect x="24" y="24" width="672" height="602" rx="20" fill="url(#b)" stroke="#303741"/>
+  <text x="56" y="70" fill="#f4f7fb" font-family="Arial" font-size="24" font-weight="700">StudioFlow FrameGap</text>
+  <rect x="56" y="105" width="600" height="64" rx="10" fill="#20ae43"/>
+  <text x="356" y="145" text-anchor="middle" fill="white" font-family="Arial" font-size="20" font-weight="700">Find Frame Gaps</text>
+  <text x="56" y="220" fill="#9da6b2" font-family="Arial" font-size="17">SEQUENCE</text>
+  <rect x="56" y="238" width="600" height="64" rx="10" fill="#171c22"/>
+  <text x="84" y="278" fill="#e8edf3" font-family="Arial" font-size="18">02_Main_Edit</text>
+  <text x="56" y="350" fill="#9da6b2" font-family="Arial" font-size="17">SEARCH RANGE</text>
+  <rect x="56" y="368" width="600" height="64" rx="10" fill="#171c22"/>
+  <text x="84" y="408" fill="#e8edf3" font-family="Arial" font-size="18">In to Out</text>
+  <rect x="56" y="472" width="600" height="80" rx="12" fill="#151a20" stroke="#2b333d"/>
+  <text x="84" y="505" fill="#9da6b2" font-family="Arial" font-size="16">LAST SCAN</text>
+  <text x="84" y="535" fill="#e8edf3" font-family="Arial" font-size="20">24 gaps detected</text>
+  <circle cx="620" cy="512" r="12" fill="#20ae43"/>
+</svg>
