@@ -4,6 +4,12 @@
 :root {
   --accent:#00d1c1;
   --accent-dark:#009f96;
+  --enable-accent:#8c6fbb;
+  --delivery-accent:#af581a;
+  --framegap-accent:#467fd0;
+  --enable-on-accent:#10141d;
+  --delivery-on-accent:#fff;
+  --framegap-on-accent:#10141d;
   --text:#10141d;
   --text-soft:#4d5563;
   --text-muted:#7c8491;
@@ -285,7 +291,8 @@ button {
 }
 
 .product-card {
-  --card-accent:#2f6fff;
+  --card-accent:var(--enable-accent);
+  --card-on-accent:var(--enable-on-accent);
   min-width:0;
   min-height:300px;
   display:grid;
@@ -298,15 +305,18 @@ button {
 }
 
 .product-card-enable {
-  --card-accent:#2f6fff
+  --card-accent:var(--enable-accent);
+  --card-on-accent:var(--enable-on-accent)
 }
 
 .product-card-delivery {
-  --card-accent:#00a99d
+  --card-accent:var(--delivery-accent);
+  --card-on-accent:var(--delivery-on-accent)
 }
 
 .product-card-framegap {
-  --card-accent:#21a947
+  --card-accent:var(--framegap-accent);
+  --card-on-accent:var(--framegap-on-accent)
 }
 
 .product-card:hover {
@@ -320,21 +330,26 @@ button {
   display:flex;
   flex-direction:column;
   align-items:flex-start;
-  color:#fff;
-  background:linear-gradient(145deg,color-mix(in srgb,var(--card-accent) 92%,white),color-mix(in srgb,var(--card-accent) 82%,black));
-  transition:filter var(--transition)
+  color:var(--card-on-accent);
+  background:var(--card-accent);
+  transition:background-color var(--transition)
 }
 
 .product-card:hover .product-accent-panel {
-  filter:saturate(1.08) brightness(1.03)
+  background:color-mix(in srgb,var(--card-accent) 93%,black)
 }
 
-.product-code {
+.product-icon {
+  display:block;
+  aspect-ratio:1;
+  object-fit:contain;
+  flex-shrink:0
+}
+
+.product-icon-plugin {
+  width:clamp(58px,5vw,76px);
+  height:clamp(58px,5vw,76px);
   margin-bottom:auto;
-  font-size:3.1rem;
-  font-weight:900;
-  line-height:1;
-  letter-spacing:-.055em
 }
 
 .product-accent-panel p {
@@ -429,25 +444,6 @@ button {
 .application-icon {
   width:92px;
   height:92px;
-  border-radius:21px;
-  display:grid;
-  place-items:center;
-  color:#fff;
-  font-size:2.45rem;
-  font-weight:900;
-  letter-spacing:-.06em
-}
-
-.manager {
-  background:linear-gradient(145deg,#6571da,#2f3b9c)
-}
-
-.qc {
-  background:linear-gradient(145deg,#ca4de3,#7817a1)
-}
-
-.datamaster {
-  background:linear-gradient(145deg,#27c7c7,#05878d)
 }
 
 .application-item h3 {
@@ -892,9 +888,7 @@ button {
   }
   .application-icon {
     width:72px;
-    height:72px;
-    border-radius:18px;
-    font-size:2rem
+    height:72px
   }
   .homepage-contact-grid {
     grid-template-columns:1fr
