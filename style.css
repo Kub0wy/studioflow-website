@@ -325,6 +325,13 @@ button {
   transform:translateY(-5px)
 }
 
+.product-card:focus-visible {
+  border-color:var(--card-accent);
+  outline:3px solid var(--accent);
+  outline-offset:4px;
+  transform:translateY(-5px)
+}
+
 .product-accent-panel {
   padding:30px 24px;
   display:flex;
@@ -363,10 +370,39 @@ button {
   line-height:1
 }
 
-.product-accent-panel span {
+.product-accent-panel .product-summary {
   margin-top:12px;
   font-size:.9rem;
   line-height:1.3
+}
+
+.product-status {
+  width:max-content;
+  max-width:100%;
+  padding:5px 9px 4px;
+  border:1px solid currentColor;
+  border-radius:999px;
+  display:inline-flex;
+  align-items:center;
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  line-height:1;
+  text-transform:uppercase
+}
+
+.product-accent-panel .product-status {
+  margin:14px 0 0
+}
+
+.product-status-available {
+  color:#123d39;
+  background:#bff7f1
+}
+
+.product-status-soon {
+  color:#343b46;
+  background:#f3f5f7
 }
 
 .product-media {
@@ -441,13 +477,19 @@ button {
   transform:translateX(5px)
 }
 
+.application-item:focus-visible {
+  outline:3px solid var(--accent);
+  outline-offset:-3px;
+  background:#fff
+}
+
 .application-icon {
   width:92px;
   height:92px;
 }
 
 .application-item h3 {
-  margin:0;
+  margin:7px 0 0;
   font-size:1.45rem
 }
 
@@ -459,6 +501,64 @@ button {
 
 .application-arrow {
   font-size:1.5rem
+}
+
+/* ==========================================================
+   PRODUCT PAGES
+   ========================================================== */
+.product-page {
+  min-height:100vh;
+  padding:170px 0 110px;
+  display:grid;
+  align-items:center;
+  background:radial-gradient(circle at 78% 24%,rgba(0,209,193,.08),transparent 34%),#fff
+}
+
+.product-page-container {
+  width:min(calc(100% - 64px),1180px);
+  margin-inline:auto
+}
+
+.product-page-hero {
+  display:grid;
+  grid-template-columns:220px minmax(0,1fr);
+  gap:64px;
+  align-items:center
+}
+
+.product-page-icon {
+  width:220px;
+  height:220px
+}
+
+.product-page-copy {
+  max-width:820px
+}
+
+.product-page-copy .product-status {
+  margin-bottom:24px
+}
+
+.product-page-copy h1 {
+  margin:0;
+  font-size:clamp(3.4rem,7vw,7.2rem);
+  line-height:.9;
+  letter-spacing:-.06em
+}
+
+.product-page-description {
+  max-width:760px;
+  margin:30px 0 0;
+  color:var(--text-soft);
+  font-size:clamp(1.18rem,2vw,1.45rem)
+}
+
+.product-page-note {
+  max-width:760px;
+  margin:28px 0 0;
+  padding-top:24px;
+  border-top:1px solid var(--border);
+  color:var(--text-muted)
 }
 
 /* ==========================================================
@@ -798,6 +898,14 @@ button {
   .about-layout {
     grid-template-columns:1fr 1fr
   }
+  .product-page-hero {
+    grid-template-columns:170px minmax(0,1fr);
+    gap:44px
+  }
+  .product-page-icon {
+    width:170px;
+    height:170px
+  }
   .about-layout > p {
     grid-column:2
   }
@@ -941,6 +1049,23 @@ button {
   }
   .contact-grid {
     grid-template-columns:1fr
+  }
+  .product-page {
+    padding:124px 0 78px
+  }
+  .product-page-container {
+    width:min(calc(100% - 30px),1180px)
+  }
+  .product-page-hero {
+    grid-template-columns:1fr;
+    gap:34px
+  }
+  .product-page-icon {
+    width:118px;
+    height:118px
+  }
+  .product-page-copy h1 {
+    font-size:clamp(2.8rem,15vw,4.8rem)
   }
 }
 
