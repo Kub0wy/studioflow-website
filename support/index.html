@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Support, system requirements and troubleshooting information for StudioFlow products.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://studioflow.media/support/">
+  <title>StudioFlow Support</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo-link" aria-label="StudioFlow — home">
+        <img class="brand-logo-svg brand-logo-svg-small" src="/assets/logo/studioflow-logo.svg" alt="StudioFlow">
+      </a>
+      <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="main-navigation" id="main-navigation" aria-label="Main navigation">
+        <a href="/#plugins">Plugins</a>
+        <a href="/#applications">Applications</a>
+        <a href="/#about">About</a>
+        <a class="header-cta" href="/#plugins">Explore tools</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="info-page">
+    <div class="info-container">
+      <header class="info-header">
+        <p class="section-label">Help and troubleshooting</p>
+        <h1>StudioFlow Support</h1>
+        <p class="info-intro">Get help with StudioFlow products, installation, compatibility and common workflow issues.</p>
+      </header>
+
+      <div class="info-content">
+        <section class="info-section">
+          <h2>StudioFlow Enable</h2>
+          <p>StudioFlow Enable is a compact Adobe Premiere Pro plugin for batch-enabling and disabling supported timeline items.</p>
+        </section>
+
+        <section class="info-section">
+          <h2>System requirements</h2>
+          <ul>
+            <li>Adobe Premiere Pro with UXP plugin support</li>
+            <li>A compatible version of macOS or Windows supported by Adobe Premiere Pro</li>
+            <li>Adobe Creative Cloud Desktop for Marketplace installation</li>
+          </ul>
+        </section>
+
+        <section class="info-section">
+          <h2>How to open the plugin</h2>
+          <p class="instruction-path">Window → UXP Plugins → StudioFlow Enable</p>
+        </section>
+
+        <section class="info-section">
+          <h2>Available controls</h2>
+          <div class="control-list">
+            <article class="control-item">
+              <h3>All</h3>
+              <p>Enables or disables all supported video and audio timeline items.</p>
+            </article>
+            <article class="control-item">
+              <h3>Video</h3>
+              <p>Enables or disables supported video clips.</p>
+            </article>
+            <article class="control-item">
+              <h3>Audio</h3>
+              <p>Enables or disables supported audio clips.</p>
+            </article>
+            <article class="control-item">
+              <h3>Adjustment Layers</h3>
+              <p>Enables or disables adjustment layers.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="info-section">
+          <h2>Undoing an operation</h2>
+          <p>StudioFlow Enable does not include a separate Undo button.</p>
+          <p>Use Premiere Pro’s native Undo command:</p>
+          <ul>
+            <li><strong>macOS:</strong> Command + Z</li>
+            <li><strong>Windows:</strong> Control + Z</li>
+          </ul>
+          <p>Each completed batch operation is designed to behave as one undoable transaction.</p>
+        </section>
+
+        <section class="info-section">
+          <h2>Troubleshooting</h2>
+          <div class="troubleshooting-list">
+            <article class="troubleshooting-item">
+              <h3>The plugin cannot find an active sequence</h3>
+              <p>Open a sequence in the Premiere Pro Timeline panel and try again.</p>
+            </article>
+            <article class="troubleshooting-item">
+              <h3>A button does not change any clips</h3>
+              <p>Make sure the active sequence contains timeline items of the selected type.</p>
+            </article>
+            <article class="troubleshooting-item">
+              <h3>Graphics are not available as a separate category</h3>
+              <p>The current Premiere Pro UXP API does not provide a reliable supported method for identifying every existing graphics item. StudioFlow Enable therefore does not use filename or metadata heuristics.</p>
+            </article>
+            <article class="troubleshooting-item">
+              <h3>The plugin does not appear in Premiere Pro</h3>
+              <p>Confirm that:</p>
+              <ul>
+                <li>the plugin was installed through Adobe Creative Cloud,</li>
+                <li>the installed Premiere Pro version supports UXP plugins,</li>
+                <li>Premiere Pro was restarted after installation.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="info-section">
+          <h2>Contact support</h2>
+          <p><a href="mailto:support@studioflow.media">support@studioflow.media</a></p>
+          <div class="support-note">
+            <p>Please include your operating system, Premiere Pro version, StudioFlow Enable version, issue description and reproduction steps.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> StudioFlow</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/#plugins">Plugins</a>
+        <a href="/#applications">Applications</a>
+        <a href="/#about">About</a>
+        <a href="/support/" aria-current="page">Support</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

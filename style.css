@@ -466,6 +466,75 @@ button {
 }
 
 /* ==========================================================
+   HOMEPAGE CONTACT
+   ========================================================== */
+.homepage-contact-section {
+  border-top:1px solid var(--border);
+  background:#fff
+}
+
+.homepage-contact-layout {
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:90px;
+  align-items:start
+}
+
+.homepage-contact-copy h2 {
+  margin:14px 0 0;
+  font-size:clamp(3rem,5vw,5.2rem);
+  line-height:.96;
+  letter-spacing:-.055em
+}
+
+.homepage-contact-copy > p:last-child {
+  max-width:520px;
+  margin:26px 0 0;
+  color:var(--text-soft);
+  font-size:1.08rem
+}
+
+.homepage-contact-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px
+}
+
+.homepage-contact-card {
+  min-width:0;
+  padding:24px 26px;
+  border:1px solid var(--border);
+  border-radius:21px;
+  background:#fff;
+  cursor:pointer;
+  transition:border-color var(--transition),transform var(--transition)
+}
+
+.homepage-contact-card:hover {
+  border-color:var(--accent);
+  transform:translateY(-4px)
+}
+
+.homepage-contact-card:focus-visible {
+  border-color:var(--accent);
+  outline:2px solid var(--accent);
+  outline-offset:3px;
+  transform:translateY(-4px)
+}
+
+.homepage-contact-card h3 {
+  margin:0;
+  font-size:1.45rem
+}
+
+.homepage-contact-card p {
+  margin:8px 0 0;
+  overflow-wrap:anywhere;
+  color:var(--text-soft);
+  font-size:.92rem
+}
+
+/* ==========================================================
    ABOUT AND FOOTER
    ========================================================== */
 .about-section {
@@ -512,7 +581,190 @@ button {
 
 .footer-links {
   display:flex;
-  gap:28px
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  gap:12px 28px
+}
+
+.footer-links a {
+  transition:color var(--transition)
+}
+
+.footer-links a:hover {
+  color:var(--text)
+}
+
+/* ==========================================================
+   INFORMATIONAL PAGES
+   ========================================================== */
+.info-page {
+  min-height:100vh;
+  padding:170px 0 110px;
+  background:#fff
+}
+
+.info-container {
+  width:min(calc(100% - 64px),920px);
+  margin-inline:auto
+}
+
+.info-header {
+  max-width:780px;
+  margin-bottom:64px;
+  padding-bottom:46px;
+  border-bottom:1px solid var(--border)
+}
+
+.info-header h1 {
+  margin:14px 0 0;
+  font-size:clamp(3.2rem,7vw,6.2rem);
+  line-height:.94;
+  letter-spacing:-.055em
+}
+
+.info-intro {
+  max-width:720px;
+  margin:28px 0 0;
+  color:var(--text-soft);
+  font-size:clamp(1.12rem,2vw,1.35rem)
+}
+
+.info-updated {
+  margin:22px 0 0;
+  color:var(--text-muted);
+  font-size:.9rem;
+  font-weight:600
+}
+
+.info-content {
+  display:grid;
+  gap:52px
+}
+
+.info-section {
+  scroll-margin-top:110px
+}
+
+.info-section + .info-section {
+  padding-top:52px;
+  border-top:1px solid var(--border)
+}
+
+.info-section h2 {
+  margin:0 0 18px;
+  font-size:clamp(1.8rem,3vw,2.35rem);
+  line-height:1.08;
+  letter-spacing:-.035em
+}
+
+.info-section h3 {
+  margin:30px 0 10px;
+  font-size:1.15rem;
+  line-height:1.25
+}
+
+.info-section p {
+  max-width:780px;
+  margin:0;
+  color:var(--text-soft)
+}
+
+.info-section p + p {
+  margin-top:16px
+}
+
+.info-section ul {
+  margin:18px 0 0;
+  padding-left:1.2em;
+  color:var(--text-soft)
+}
+
+.info-section li + li {
+  margin-top:8px
+}
+
+.info-section strong {
+  color:var(--text);
+  font-weight:700
+}
+
+.info-section a,
+.contact-link {
+  color:var(--accent-dark);
+  font-weight:700;
+  text-decoration:underline;
+  text-decoration-color:rgba(0,159,150,.35);
+  text-underline-offset:.2em;
+  transition:color var(--transition),text-decoration-color var(--transition)
+}
+
+.info-section a:hover,
+.contact-link:hover {
+  color:var(--text);
+  text-decoration-color:var(--text)
+}
+
+.instruction-path {
+  margin-top:18px!important;
+  padding:18px 22px;
+  border:1px solid var(--border);
+  border-radius:14px;
+  color:var(--text)!important;
+  font-weight:700
+}
+
+.control-list,
+.troubleshooting-list,
+.contact-grid {
+  margin-top:26px;
+  display:grid;
+  gap:14px
+}
+
+.control-item,
+.troubleshooting-item,
+.contact-card {
+  padding:24px;
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:#fff
+}
+
+.control-item h3,
+.troubleshooting-item h3,
+.contact-card h2 {
+  margin:0 0 8px
+}
+
+.control-item p,
+.troubleshooting-item p,
+.contact-card p {
+  margin:0
+}
+
+.contact-grid {
+  grid-template-columns:repeat(2,minmax(0,1fr))
+}
+
+.contact-card h2 {
+  font-size:1.55rem;
+  letter-spacing:-.025em
+}
+
+.contact-card .contact-link {
+  margin-top:18px;
+  display:inline-block
+}
+
+.support-note {
+  margin-top:34px;
+  padding:24px;
+  border-left:3px solid var(--accent);
+  background:#f7fbfb
+}
+
+.support-note p {
+  margin:0
 }
 
 /* ==========================================================
@@ -540,6 +792,10 @@ button {
     grid-template-columns:34% 66%
   }
   .applications-layout {
+    grid-template-columns:1fr;
+    gap:50px
+  }
+  .homepage-contact-layout {
     grid-template-columns:1fr;
     gap:50px
   }
@@ -640,6 +896,12 @@ button {
     border-radius:18px;
     font-size:2rem
   }
+  .homepage-contact-grid {
+    grid-template-columns:1fr
+  }
+  .homepage-contact-card {
+    padding:20px
+  }
   .about-layout {
     grid-template-columns:1fr
   }
@@ -654,6 +916,37 @@ button {
   .footer-inner {
     flex-direction:column;
     align-items:flex-start
+  }
+  .footer-links {
+    justify-content:flex-start
+  }
+  .info-page {
+    padding:124px 0 78px
+  }
+  .info-container {
+    width:min(calc(100% - 30px),920px)
+  }
+  .info-header {
+    margin-bottom:46px;
+    padding-bottom:34px
+  }
+  .info-header h1 {
+    font-size:clamp(2.75rem,14vw,4.4rem)
+  }
+  .info-content {
+    gap:40px
+  }
+  .info-section + .info-section {
+    padding-top:40px
+  }
+  .control-item,
+  .troubleshooting-item,
+  .contact-card,
+  .support-note {
+    padding:20px
+  }
+  .contact-grid {
+    grid-template-columns:1fr
   }
 }
 
