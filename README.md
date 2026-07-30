@@ -1,16 +1,34 @@
-# StudioFlow Website v0.5
+# StudioFlow Website v0.6
 
 Temporary, deployable static version of the StudioFlow landing page.
 
-## Changes in v0.5
+## Changes in v0.6
 
-- Replaced every text-built StudioFlow wordmark with one reusable SVG logo.
-- Recreated the SVG from the supplied `STUDIOFLOW_BLACK.png` reference.
-- The turquoise dot is now permanently embedded in the logo artwork and remains centered inside the final `O` at every size.
-- Updated the header, hero and about section to use the same logo asset.
-- Removed the old `.brand-letter-o` and `.brand-dot` system.
-- Reorganized `style.css` into clearly labeled sections.
-- Preserved the existing layout, cards, static wave background and JavaScript behavior.
+- Added a responsive Devlog section and Blog navigation across the site.
+- Added a zero-dependency Markdown publishing generator.
+- Added dated source folders, automatic attachment handling, clean post pages,
+  a JSON post manifest and an RSS feed.
+- Published the first devlog under `BLOG/2026-07-30/`.
+
+## Publish a blog post
+
+Add a `.md` file and its images, PDFs or other attachments to a dated folder:
+
+```text
+BLOG/2026-08-04/
+├── new-devlog.md
+├── screenshot.jpg
+└── notes.pdf
+```
+
+Then generate the public pages:
+
+```sh
+npm run build
+```
+
+See [`BLOG/README.md`](BLOG/README.md) for optional titles, excerpts, slugs and
+per-post attachment lists.
 
 ## Run locally
 

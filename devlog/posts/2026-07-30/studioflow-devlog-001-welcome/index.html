@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="If you've landed here, chances are you work in postproduction too. For more than 15 years I've been working as a video editor on documentaries, TV shows, commercials, and all kinds of produc…">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://studioflow.media/devlog/posts/2026-07-30/studioflow-devlog-001-welcome/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Welcome to StudioFlow — Why I Started Building These Tools">
+  <meta property="og:description" content="If you've landed here, chances are you work in postproduction too. For more than 15 years I've been working as a video editor on documentaries, TV shows, commercials, and all kinds of produc…">
+  <meta property="og:url" content="https://studioflow.media/devlog/posts/2026-07-30/studioflow-devlog-001-welcome/">
+  <title>Welcome to StudioFlow — Why I Started Building These Tools — StudioFlow</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" title="StudioFlow Devlog" href="/devlog/feed.xml">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo-link" aria-label="StudioFlow — home"><img class="brand-logo-svg brand-logo-svg-small" src="/assets/logo/studioflow-logo.svg" alt="StudioFlow"></a>
+      <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="main-navigation" id="main-navigation" aria-label="Main navigation">
+        <a href="/#plugins">Plugins</a>
+        <a href="/#applications">Applications</a>
+        <a href="/#about">About</a>
+        <a href="/devlog/" aria-current="page">Blog</a>
+        <a class="header-cta" href="/#plugins">Explore tools</a>
+      </nav>
+    </div>
+  </header>
+  <main id="top" class="blog-post-page">
+  <article class="blog-post">
+    <header class="blog-post-header">
+      <a class="blog-back-link" href="/devlog/">← All devlogs</a>
+      <p class="section-label">StudioFlow Devlog</p>
+      <h1>Welcome to StudioFlow — Why I Started Building These Tools</h1>
+      <time datetime="2026-07-30">30 July 2026</time>
+    </header>
+    <div class="blog-post-content"><p>If you've landed here, chances are you work in post-production too.</p>
+<p>For more than 15 years I've been working as a video editor on documentaries, TV shows, commercials, and all kinds of productions with impossible deadlines, constantly changing edits, and thousands of media files.</p>
+<p>Over the years I noticed something interesting.</p>
+<p>The biggest problems in editing are rarely creative.</p>
+<p>They're usually the tiny, repetitive tasks that interrupt your flow dozens of times every day. Clicking the same buttons. Hunting for a one-frame mistake. Preparing deliveries. Organizing projects. Waiting for files to copy while wondering if everything actually transferred correctly.</p>
+<p>None of these problems are particularly exciting.</p>
+<p>But solving them is.</p>
+<p>That idea eventually became <strong>StudioFlow</strong>.</p>
+<hr>
+<h2>Built by an editor, for editors</h2>
+<p>StudioFlow grew naturally from everyday work in the edit suite.</p>
+<p>Almost every tool started the same way.</p>
+<p>I found myself repeating the same task over and over again and thought:</p>
+<blockquote><p>&quot;There has to be a better way.&quot;</p></blockquote>
+<p>So I started building small utilities that solved real problems I was facing inside Adobe Premiere Pro.</p>
+<p>The goal has never been to reinvent editing.</p>
+<p>It's to remove friction from it.</p>
+<p>If a plugin saves a few minutes every day or prevents a single mistake before delivery, it's already doing its job.</p>
+<hr>
+<h2>What exists today</h2>
+<h3>StudioFlow Enable</h3>
+<p>Enable was born from one very specific workflow.</p>
+<p>When preparing an <strong>AAF</strong> for the sound department, I often need to deliver <strong>every audio clip</strong>, even though during editing I've temporarily disabled many of them to keep the timeline clean.</p>
+<p>Premiere Pro doesn't offer a simple <strong>Enable Everything</strong> command.</p>
+<p>If you select multiple clips and use the built-in Enable option, Premiere simply <strong>toggles</strong> their state. Enabled clips become disabled, disabled clips become enabled, leaving you with another mixed selection instead of everything enabled.</p>
+<p>So I built a tool that simply does what I expect.</p>
+<p>One click.</p>
+<p>Everything enabled.</p>
+<p>Or everything disabled.</p>
+<p>It's an incredibly small plugin, but after using it for a while, going back feels surprisingly frustrating.</p>
+<hr>
+<h3>StudioFlow FrameGap</h3>
+<p>One-frame gaps.</p>
+<p>Two-frame gaps.</p>
+<p>Three-frame mistakes hiding somewhere in a long timeline.</p>
+<p>Every editor knows how annoying they can be.</p>
+<p>FrameGap scans your sequence and immediately points you to those tiny problems before they become someone else's problem.</p>
+<p>It's one of those tools you hope never finds anything.</p>
+<p>But you're always happy when it does.</p>
+<hr>
+<h3>StudioFlow Delivery</h3>
+<p>Another workflow that kept repeating itself involved preparing projects for other departments.</p>
+<p>Typically I would duplicate my edit several times, remove unnecessary tracks, lock the right ones, prepare one version for the colorist and another one for audio post-production, export everything, double-check it, and hope I hadn't forgotten a single step.</p>
+<p>That gets old very quickly.</p>
+<p>The idea behind StudioFlow Delivery is simple:</p>
+<p>Configure everything once.</p>
+<p>Save your presets.</p>
+<p>Click one button.</p>
+<p>Then go grab a coffee while the plugin prepares your deliveries exactly the way you like them.</p>
+<hr>
+<h3>StudioFlow Project Manager</h3>
+<p>This project is currently under active development.</p>
+<p>The goal isn't to replace Premiere's built-in Project Manager.</p>
+<p>Instead, I want to make large productions easier to organize, navigate and maintain, especially when projects grow over months of editing and involve multiple editors.</p>
+<p>There's still plenty to build, but it's already becoming one of the projects I'm most excited about.</p>
+<hr>
+<h2>What's coming next</h2>
+<p>StudioFlow is growing beyond Premiere Pro plugins.</p>
+<p>Several larger desktop applications are already in development, each focused on solving a different part of the post-production workflow.</p>
+<h3>StudioFlow QC</h3>
+<p>A quality control application designed to analyze video and audio files before delivery.</p>
+<p>The goal is simple:</p>
+<p>Catch technical problems before your client, broadcaster or streaming platform does.</p>
+<h3>StudioFlow DataMaster</h3>
+<p>Probably the most ambitious project in the StudioFlow family.</p>
+<p>DataMaster is a completely new copying and verification engine designed for media professionals moving huge amounts of footage every day.</p>
+<p>The focus is reliability, speed, intelligent verification and confidence that every copied file is exactly where it should be.</p>
+<hr>
+<h2>This is a passion project</h2>
+<p>People often ask how much work goes into building software like this.</p>
+<p>The truth is that it rarely feels like work.</p>
+<p>I genuinely enjoy discovering those tiny frustrations that every editor quietly accepts as &quot;that's just how Premiere works&quot; and trying to build a better solution.</p>
+<p>Creating StudioFlow is my way of sharing the tools I wish I had years ago.</p>
+<p>Some of them save only a few clicks.</p>
+<p>Some save several minutes every day.</p>
+<p>Some may save an entire delivery.</p>
+<p>And honestly, that's what makes building them so much fun.</p>
+<hr>
+<h2>See you in the next devlog</h2>
+<p>This blog is where I'll be sharing development progress, new ideas, technical challenges, lessons learned, and behind-the-scenes stories from building StudioFlow.</p>
+<p>Hopefully some of these tools will become useful in your own workflow too.</p></div>
+    
+    <footer class="blog-author" aria-label="About the author">
+  <img class="blog-author-photo" src="/JR/JR.jpg" alt="Jakub Rolka" width="88" height="88" loading="lazy">
+  <div class="blog-author-details">
+    <span class="blog-author-label">Written by</span>
+    <strong>Jakub Rolka</strong>
+    <span>Founder, StudioFlow</span>
+  </div>
+  <a class="blog-author-brand" href="/" aria-label="StudioFlow — home">
+    <img src="/assets/logo/studioflow-logo.svg" alt="StudioFlow">
+  </a>
+</footer>
+  </article>
+</main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> StudioFlow</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/#plugins">Plugins</a><a href="/#applications">Applications</a><a href="/#about">About</a><a href="/devlog/" aria-current="page">Blog</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
