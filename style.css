@@ -1607,3 +1607,52 @@ button {
     transition-duration:.01ms!important
   }
 }
+
+
+
+.product-buy-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.enable-buy-button {
+  color: #ffffff;
+  background-color: #9276bd;
+  border-color: #9276bd;
+  box-shadow: 0 8px 22px rgba(146, 118, 189, 0.22);
+}
+
+.enable-buy-button:hover {
+  color: #ffffff;
+  background-color: #8063ae;
+  border-color: #8063ae;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(146, 118, 189, 0.3);
+}
+
+.enable-buy-button:active {
+  transform: translateY(0);
+}
+
+.enable-buy-button:focus-visible {
+  outline: 3px solid rgba(146, 118, 189, 0.35);
+  outline-offset: 3px;
+}
