@@ -34,8 +34,11 @@ Relative Markdown links and images work normally:
 [Download the notes](project-notes.pdf)
 ```
 
-Run `npm run build` after adding or changing content. This regenerates the blog
-index, individual post pages, the JSON post manifest and the RSS feed.
+During local work, run `npm run dev`. The `BLOG/` directory is watched and every
+new or changed post automatically regenerates the blog index, individual pages,
+JSON manifest and RSS feed. Open local pages reload after a successful rebuild.
+
+Run `npm run build` once before publishing when no development server is active.
 
 Generated public pages are written to `devlog/`; Markdown sources and original
 attachments stay cleanly separated in `BLOG/`.

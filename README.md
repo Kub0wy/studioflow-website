@@ -21,7 +21,17 @@ BLOG/2026-08-04/
 └── notes.pdf
 ```
 
-Then generate the public pages:
+For local work, start the site with automatic blog rebuilding:
+
+```sh
+npm run dev
+```
+
+While this process is running, adding or editing anything in `BLOG/`
+regenerates the post list, individual pages, JSON manifest and RSS feed. An open
+local page reloads after a successful rebuild.
+
+Before publishing, generate the public pages once with:
 
 ```sh
 npm run build
@@ -32,4 +42,4 @@ per-post attachment lists.
 
 ## Run locally
 
-Open `index.html` directly or use a local server such as VS Code Live Server.
+Run `npm run dev`, then open `http://127.0.0.1:4173/`.

@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build-blog.mjs",
-    "blog:build": "node scripts/build-blog.mjs"
+    "blog:build": "node scripts/build-blog.mjs",
+    "dev": "node scripts/dev.mjs"
   }
 }
